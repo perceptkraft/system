@@ -12,27 +12,19 @@ import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import CardsComp from "./CardsComp";
-import TableComp from './TableComp';
-import StaticTable from "./StaticTable";
-import CurrentDateCalendar from "./CurrentDateCalendar";
+import CardsComp from "../CardsComp";
+import TableComp from '../TableComp';
+import StaticTable from "../StaticTable";
+import CurrentDateCalendar from "../CurrentDateCalendar";
 import { useNavigate } from "react-router-dom";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
-import {
-  CollectionsBookmark,
-  Edit,
-  Feedback,
-  Help,
-  PermMedia,
-  UploadFile,
-  Work,
-} from "@mui/icons-material";
 import { Grid } from "@mui/material";
+import EmployeeDatatable from "./EmployeeDatatable";
 
 const drawWidth = 220;
 
-function Sidebar() {
+function EmployeeDetailsComp() {
   const [mobileViewOpen, setMobileViewOpen] = React.useState(false);
 
   const handleToggle = () => {
@@ -183,25 +175,7 @@ function Sidebar() {
             }}
           >
             <Toolbar />
-            <CardsComp />
-            <div style={{ display: 'flex', marginTop: '2%' }}>
-              <div>
-                <TableComp />
-              </div>
-              <div style={{ marginLeft: '1%' }}>
-                <TableComp />
-              </div>
-            </div>
-            <div style={{ marginTop: '2%' }}>
-              <Grid container>
-                <Grid xs={9}>
-                  <StaticTable />
-                </Grid>
-                <Grid xs={3}>
-                  <CurrentDateCalendar />
-                </Grid>
-              </Grid>
-            </div>
+           <EmployeeDatatable />
           </Box>
         </Box>
       </div>
@@ -209,4 +183,4 @@ function Sidebar() {
   );
 }
 
-export default Sidebar;
+export default EmployeeDetailsComp;
