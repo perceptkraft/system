@@ -53,5 +53,9 @@
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.31",
     "react-router-dom": "^6.16.0"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }

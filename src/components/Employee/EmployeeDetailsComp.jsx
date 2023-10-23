@@ -51,7 +51,9 @@ function EmployeeDetailsComp() {
       </Typography>
       <List sx={{ backgroundColor: "#09212E" }}>
 
-        <ListItemButton sx={{ color: "white" }}>
+        <ListItemButton sx={{ color: "white" }} onClick={() => {
+          navigate("/");
+        }}>
           <ListItemIcon sx={{ color: "white" }}>
             <ArrowForwardIosIcon />
           </ListItemIcon>

@@ -59,7 +59,9 @@ function Sidebar() {
       </Typography>
       <List sx={{ backgroundColor: "#09212E" }}>
 
-        <ListItemButton sx={{ color: "white" }}>
+        <ListItemButton sx={{ color: "white" }} onClick={() => {
+          navigate("/");
+        }}>
           <ListItemIcon sx={{ color: "white" }}>
             <ArrowForwardIosIcon />
           </ListItemIcon>
@@ -76,14 +78,18 @@ function Sidebar() {
           <ListItemText primary={"Employee"} />
         </ListItemButton>
 
-        <ListItemButton sx={{ color: "white" }}>
+        <ListItemButton sx={{ color: "white" }} onClick={() => {
+          navigate("/employee");
+        }}>
           <ListItemIcon sx={{ color: "white" }}>
             <ArrowForwardIosIcon />
           </ListItemIcon>
           <ListItemText primary={"Shifts"} />
         </ListItemButton>
 
-        <ListItemButton sx={{ color: "white" }}>
+        <ListItemButton sx={{ color: "white" }} onClick={() => {
+          navigate("/employee");
+        }}>
           <ListItemIcon sx={{ color: "white" }}>
             <ArrowForwardIosIcon />
           </ListItemIcon>
@@ -91,14 +97,18 @@ function Sidebar() {
         </ListItemButton>
 
 
-        <ListItemButton sx={{ color: "white" }}>
+        <ListItemButton sx={{ color: "white" }} onClick={() => {
+          navigate("/employee");
+        }}>
           <ListItemIcon sx={{ color: "white" }}>
             <ArrowForwardIosIcon />
           </ListItemIcon>
           <ListItemText primary={"Evaluation"} />
         </ListItemButton>
 
-        <ListItemButton sx={{ color: "white" }}>
+        <ListItemButton sx={{ color: "white" }} onClick={() => {
+          navigate("/employee");
+        }}>
           <ListItemIcon sx={{ color: "white" }}>
             <ArrowForwardIosIcon />
           </ListItemIcon>
