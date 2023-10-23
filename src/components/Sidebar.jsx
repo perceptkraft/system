@@ -79,7 +79,7 @@ function Sidebar() {
         </ListItemButton>
 
         <ListItemButton sx={{ color: "white" }} onClick={() => {
-          navigate("/employee");
+          navigate("/shifts");
         }}>
           <ListItemIcon sx={{ color: "white" }}>
             <ArrowForwardIosIcon />
@@ -88,7 +88,7 @@ function Sidebar() {
         </ListItemButton>
 
         <ListItemButton sx={{ color: "white" }} onClick={() => {
-          navigate("/employee");
+          navigate("/perm");
         }}>
           <ListItemIcon sx={{ color: "white" }}>
             <ArrowForwardIosIcon />
@@ -98,7 +98,7 @@ function Sidebar() {
 
 
         <ListItemButton sx={{ color: "white" }} onClick={() => {
-          navigate("/employee");
+          navigate("/eva");
         }}>
           <ListItemIcon sx={{ color: "white" }}>
             <ArrowForwardIosIcon />
@@ -107,7 +107,7 @@ function Sidebar() {
         </ListItemButton>
 
         <ListItemButton sx={{ color: "white" }} onClick={() => {
-          navigate("/employee");
+          navigate("/reports");
         }}>
           <ListItemIcon sx={{ color: "white" }}>
             <ArrowForwardIosIcon />

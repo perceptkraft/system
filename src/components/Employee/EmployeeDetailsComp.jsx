@@ -70,14 +70,18 @@ function EmployeeDetailsComp() {
           <ListItemText primary={"Employee"} />
         </ListItemButton>
 
-        <ListItemButton sx={{ color: "white" }}>
+        <ListItemButton sx={{ color: "white" }} onClick={() => {
+          navigate("/shifts");
+        }}>
           <ListItemIcon sx={{ color: "white" }}>
             <ArrowForwardIosIcon />
           </ListItemIcon>
           <ListItemText primary={"Shifts"} />
         </ListItemButton>
 
-        <ListItemButton sx={{ color: "white" }}>
+        <ListItemButton sx={{ color: "white" }} onClick={() => {
+          navigate("/perm");
+        }}>
           <ListItemIcon sx={{ color: "white" }}>
             <ArrowForwardIosIcon />
           </ListItemIcon>
@@ -85,14 +89,18 @@ function EmployeeDetailsComp() {
         </ListItemButton>
 
 
-        <ListItemButton sx={{ color: "white" }}>
+        <ListItemButton sx={{ color: "white" }} onClick={() => {
+          navigate("/eva");
+        }}>
           <ListItemIcon sx={{ color: "white" }}>
             <ArrowForwardIosIcon />
           </ListItemIcon>
           <ListItemText primary={"Evaluation"} />
         </ListItemButton>
 
-        <ListItemButton sx={{ color: "white" }}>
+        <ListItemButton sx={{ color: "white" }} onClick={() => {
+          navigate("/reports");
+        }}>
           <ListItemIcon sx={{ color: "white" }}>
             <ArrowForwardIosIcon />
           </ListItemIcon>
