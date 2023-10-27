@@ -86,7 +86,7 @@ function EmployeeForm() {
 
 
         <ListItemButton sx={{ color: "white" }} onClick={() => {
-          navigate("/eva");
+          navigate("/evaluation");
         }}>
           <ListItemIcon sx={{ color: "white" }}>
             <ArrowForwardIosIcon />

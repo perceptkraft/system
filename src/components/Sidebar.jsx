@@ -18,16 +18,6 @@ import StaticTable from "./StaticTable";
 import CurrentDateCalendar from "./CurrentDateCalendar";
 import { useNavigate } from "react-router-dom";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-
-import {
-  CollectionsBookmark,
-  Edit,
-  Feedback,
-  Help,
-  PermMedia,
-  UploadFile,
-  Work,
-} from "@mui/icons-material";
 import { Grid } from "@mui/material";
 
 const drawWidth = 220;
@@ -98,7 +88,7 @@ function Sidebar() {
 
 
         <ListItemButton sx={{ color: "white" }} onClick={() => {
-          navigate("/eva");
+          navigate("/evaluation");
         }}>
           <ListItemIcon sx={{ color: "white" }}>
             <ArrowForwardIosIcon />

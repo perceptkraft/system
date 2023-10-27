@@ -6,8 +6,8 @@ import SignUp from "./components/Signup";
 import Employee from "./components/Employee/EmployeeDetailsComp.jsx";
 import Reports from './components/Reports/Reports'
 import EmployeeForm from "./components/Employee/EmployeeForm.jsx";
-import Shifts from "./components/Shift/Shift.jsx";
-import Permissions from "./components/Permissions/Permissions.jsx";
+import Shifts from "./components/Shift/Shifts.jsx";
+import Permissions from "./components/Permissions/EmpPermissions";
 import Evaluation from "./components/Evaluation/Evaluation.jsx";
 
 function App() {
@@ -23,8 +23,8 @@ function App() {
           <Route path="/employee" element={<Employee />} />
           <Route path="/addemployee" element={<EmployeeForm />} />
           <Route path="/reports" element={<Reports />} />
-          <Route path="/perm" element={<Permissions />} />
-          <Route path="/eva" element={<Evaluation />} />
+          <Route path="/permissions" element={<Permissions />} />
+          <Route path="/evaluation" element={<Evaluation />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -12,19 +12,14 @@ import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import CardsComp from "../CardsComp";
-import TableComp from '../TableComp';
-import StaticTable from "../StaticTable";
-import CurrentDateCalendar from "../CurrentDateCalendar";
 import { useNavigate } from "react-router-dom";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
-import { Grid } from "@mui/material";
-import EmployeeDatatable from "./EmployeeDatatable";
+import Shifttable from "./Shifttable";
 
 const drawWidth = 220;
 
-function EmployeeDetailsComp() {
+function Shifts() {
   const [mobileViewOpen, setMobileViewOpen] = React.useState(false);
 
   const handleToggle = () => {
@@ -185,7 +180,7 @@ function EmployeeDetailsComp() {
             }}
           >
             <Toolbar />
-           <EmployeeDatatable />
+           <Shifttable />
           </Box>
         </Box>
       </div>
@@ -193,4 +188,4 @@ function EmployeeDetailsComp() {
   );
 }
 
-export default EmployeeDetailsComp;
+export default Shifts
